@@ -1,14 +1,12 @@
 # Sistema de Boletería de Eventos
 
-Proyecto 7 del banco de proyectos (segundo corte, Ingeniería de Sistemas, Uniguajira).
 Sistema en Django para vender entradas a eventos: registra lugares, eventos, localidades
 de cada evento (VIP, general, preferencial) con su precio y cupo, clientes y compras de entradas.
-Toda la información se registra desde el panel de administración de Django.
 
 ## Actores
-Administrador, Organizador, Taquillero y Cliente (ver `docs/diagrama_actores.png`).
+Administrador, Organizador, Taquillero y Cliente 
 
-## Modelo de datos (`docs/diagrama_er.png`)
+## Modelo de datos
 | App | Tabla | Descripción |
 |---|---|---|
 | `lugares` | `tbl_lugar` | Sitios donde se realizan los eventos |
@@ -21,19 +19,16 @@ Administrador, Organizador, Taquillero y Cliente (ver `docs/diagrama_actores.png
 En el admin, las localidades se agregan como inline dentro del evento y los renglones (detalles) dentro de la compra.
 
 ## Cómo ejecutarlo
-```bash
-git clone <URL-DEL-REPOSITORIO>
-cd boleteria
-python -m venv venv
-venv\Scripts\activate          # Windows (PowerShell: Set-ExecutionPolicy -Scope CurrentUser RemoteSigned)
-# source venv/bin/activate     # Linux / macOS
-pip install -r requirements.txt
-python manage.py migrate       # opcional: db.sqlite3 ya incluye las migraciones aplicadas
-python manage.py runserver
 ```
+ python manage.py runserver
+```
+
+
 Abrir http://127.0.0.1:8000/admin/
 
-## Credenciales del superusuario
+
+
+## Credenciales del administrador
 - Usuario: `admin`
 - Contraseña: `Admin2026*`
 
@@ -49,4 +44,6 @@ boleteria/
 ```
 
 ## Integrantes
-- (agregar nombres del grupo)
+-jorge cordoba
+-luis damian 
+-daniel cordero
